@@ -1,4 +1,4 @@
 #python
 
 lx.out("Hello modo!")
-lx.out(sys.version)
+lx.out("Python version:", sys.version)
