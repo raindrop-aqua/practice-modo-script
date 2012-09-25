@@ -1,4 +1,4 @@
-modo-script-practice
+Practice modo script
 ====================
 
-These are modo scripts
+These are modo scripts.
