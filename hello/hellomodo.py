@@ -20,6 +20,3 @@ lx.out("%s is strings" % "abcde")
 lx.out("%d %%" % 50)
 lx.out("% 3.2f" % 5.5)
 lx.out("Format {1} {0}".format("abcde", "specifications"))
-
-locale.setlocale(locale.LC_NUMERIC,'ja_JP')
-lx.out(locale.format("%d", 10000, True))
