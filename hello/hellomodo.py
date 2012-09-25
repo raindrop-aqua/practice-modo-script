@@ -1,18 +1,25 @@
 #python
 
 import urllib2
+import locale
 
-# standard
+# Standard
 lx.out("Hello modo!")
 
-# concat
+# Concat
 lx.out("Python version:", sys.version)
+lx.out("abc" + sys.version)
 
-# dir
+# Dir
 lx.out("lx:", dir(lx))
 lx.out("sys:", dir(sys))
 lx.out("urllib2:", dir(urllib2))
 
-# placeholder
+# Format specifications
 lx.out("%s is strings" % "abcde")
 lx.out("%d %%" % 50)
+lx.out("% 3.2f" % 5.5)
+lx.out("Format {1} {0}".format("abcde", "specifications"))
+
+locale.setlocale(locale.LC_NUMERIC,'ja_JP')
+lx.out(locale.format("%d", 10000, True))
