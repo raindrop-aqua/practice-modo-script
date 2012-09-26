@@ -1,7 +1,6 @@
 #python
 
 import urllib2
-import locale
 
 # Standard
 lx.out("Hello modo!")
@@ -20,3 +19,6 @@ lx.out("%s is strings" % "abcde")
 lx.out("%d %%" % 50)
 lx.out("% 3.2f" % 5.5)
 lx.out("Format {1} {0}".format("abcde", "specifications"))
+
+# Use sys.stdout
+sys.stdout.write("Hello!\n") # modo don't output.
